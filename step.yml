@@ -8,13 +8,13 @@ title: |-
 summary: |
   Installs Flutter Version Manager for the project
 description: |
-  Installs FVM (Flutter Version Manager) for the project and replaces Flutter version so that other Bitrise steps can use it
+  Installs FVM (Flutter Version Manager): https://github.com/leoafarias/fvm.
+  It reads fvm config the project and replaces Flutter with version from fvm config so that other Bitrise steps can use it.
 website: https://github.com/infinum/Install-Flutter-Version-Manager-Bitrise
-source_code_url: https://github.com/infinum/Install-Flutter-Version-Manager-Bitrise
+source_code_url: https://github.com/infinum/Install-Flutter-Version-Manager-Bitrise.git
 support_url: https://github.com/infinum/Install-Flutter-Version-Manager-Bitrise/issues
 host_os_tags:
   - osx-10.10
-  - ubuntu-16.04
 
 project_type_tags:
    - flutter
