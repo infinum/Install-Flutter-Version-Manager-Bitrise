@@ -2,7 +2,7 @@
 set -ex
 
 # Install FVM
-pub global activate fvm
+dart pub global activate fvm
 export PATH="$PATH":"$HOME/.pub-cache/bin"
 fvm install
 
