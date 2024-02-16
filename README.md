@@ -1,6 +1,6 @@
-# Install Flutter Version Manager
+# Extract FVM Flutter version
 
-Installs FVM and replaces Flutter version so that other Bitrise steps use it
+Extracts Flutter version from FVM configuration file (`.fvmrc`).
 
 
 ## How to use this Step

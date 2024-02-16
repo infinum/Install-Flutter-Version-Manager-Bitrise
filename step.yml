@@ -4,12 +4,11 @@
 # - Main Bitrise CLI docs: https://github.com/bitrise-io/bitrise/tree/master/_docs
 
 title: |-
-  Install Flutter Version Manager
+  Extract FVM Flutter version
 summary: |
-  Installs Flutter Version Manager for the project
+  Extracts Flutter version from FVM configuration file.
 description: |
-  Installs FVM (Flutter Version Manager): https://github.com/leoafarias/fvm.
-  It reads fvm config the project and replaces Flutter with version from fvm config so that other Bitrise steps can use it.
+  Extracts Flutter version from FVM configuration file (`.fvmrc`).
 website: https://github.com/infinum/Install-Flutter-Version-Manager-Bitrise
 source_code_url: https://github.com/infinum/Install-Flutter-Version-Manager-Bitrise.git
 support_url: https://github.com/infinum/Install-Flutter-Version-Manager-Bitrise/issues
@@ -20,16 +19,19 @@ project_type_tags:
    - flutter
 
 type_tags:
-  - installer
+  - utility
 
 is_requires_admin_user: true
 is_always_run: false
 is_skippable: false
 run_if: ""
 
-
 toolkit:
   bash:
     entry_file: step.sh
 
-# No inputs or outputs
+outputs:
+  - FVM_FLUTTER_VERSION:
+    opts:
+      title: Flutter version
+      summary: Flutter version extracted from FVM configuration file.
